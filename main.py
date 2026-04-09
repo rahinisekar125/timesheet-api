@@ -78,7 +78,8 @@ def view_entry(entry_id: str):
         raise HTTPException(status_code=404, detail=f"Entry '{entry_id}' not found.")
     return entry
 
-
+# added for code review demo
+# demo change for PR
 @app.delete("/timesheets/{entry_id}", status_code=200, tags=["Timesheets"])
 def delete_entry(entry_id: str):
     """Delete a timesheet entry by its ID."""
